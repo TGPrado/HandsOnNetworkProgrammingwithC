@@ -65,8 +65,9 @@ int main() {
   struct addrinfo *bind_address;
   getaddrinfo(0, "8080", &hints, &bind_address);
   // Neste aso getaddrinfo gera um endereço para que possamos usar um bind
+  // o primeiro parametro indica o hostname
+  // como nos referimos ao local(127.0.0.1) pode-se usar 0
   // O segundo parametro indica a porta
-  // Indica o hostname, como nos referimos ao local(127.0.0.1) pode-se usar 0
   // Mesmo que alguns programas não usem o getaddrinfo o ideal é usá-lo pois
   // com ele fica muito mais fácil converter o código de IPv4 para IPv6
   printf("Criando socket...\n");

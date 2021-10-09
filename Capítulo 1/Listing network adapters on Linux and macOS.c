@@ -40,7 +40,8 @@ int main() {
       // O terceiro e quarto argumento são o local onde deve-se salvar
       // o resultado bem como seu tamanho
       // O quinto e sexto tem a mesma função dos dois anteriores mas para
-      // service names O último argumento pede para getnameinfo retornar o
+      // service names
+      // O último argumento pede para getnameinfo retornar o
       // número do endereço da estrutura
       getnameinfo(addresses->ifa_addr, family_size, ap, sizeof(ap), 0, 0,
                   NI_NUMERICHOST);
